@@ -15,13 +15,13 @@ import { Input } from "react-native-elements";
 import { AuthContext } from "../../context/authContext";
 
 const Login = () => {
-  const [email, setEmail] = useState("admin");
+  const [email, setEmail] = useState("admin@gmail.com");
   const [senha, setSenha] = useState("admin");
   const navigation = useNavigation();
   const { setUsuario } = useContext(AuthContext);
 
   function Validar() {
-    if (email == "admin" && senha == "admin") {
+    if (email == "admin@gmail.com" && senha == "admin") {
       navigation.navigate("Home");
       return true;
     } else {
